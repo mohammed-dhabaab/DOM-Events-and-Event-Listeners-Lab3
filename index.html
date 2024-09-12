@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Change the Channel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!-- Stylesheets -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+
+</head>
+
+<body>
+    <main class="tv">
+        <h1>Let's see what's on tonight...</h1>
+        <section class="tv-picture-container">
+            <img class="tv-frame"
+                src="https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/tv-container.png">
+            <div class="tv-show" id="screen">
+                <img src="" alt="something good to watch">
+            </div>
+        </section>
+        <ul class="channels-container">
+            <li class="channel" id="one" onclick='changeImg("https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/blue-planet.jpg", 1 )'>1</li>
+            <li class="channel" id="two" onclick='changeImg("https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/deadpool.jpg", 2)'>2</li>
+            <li class="channel" id="three" onclick='changeImg("https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/gravity.jpg", 3)'>3</li>
+            <li class="channel" id="four" onclick='changeImg("https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/good-will-hunting.jpg", 4)'>4</li>
+            <li class="channel" id="five" onclick='changeImg("https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/cnn.jpg", 5)'>5</li>
+            <li class="channel" id="six" onclick='changeImg("https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/koyaanisqatsi.jpg", 6)'>6</li>
+            <li class="channel" id="seven" onclick='changeImg("https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/parts-unknown.jpg", 7)'>7</li>
+            <li class="channel" id="eight" onclick='changeImg("https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/star-wars-solo.jpeg", 8)'>8</li>
+            <li class="channel" id="nine" onclick='changeImg("https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/stranger-things.jpg", 9)'>9</li>
+        </ul>
+    </main>
+
+
+    <script>
+        // Get the TV show image and the channels
+        let tvShowImage = document.querySelector('.tv-show img');
+
+        function changeImg(imagSrc, channelNumber) {
+            tvShowImage.src = imagSrc;
+
+        }
+    </script>
+
+
+</body>
+
+</html>
